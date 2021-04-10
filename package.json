@@ -1,0 +1,43 @@
+{
+    "name": "mdi-es",
+    "version": "1.0.0",
+    "description": "Material Design Icons exported as ES modules",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "type": "module",
+    "sideEffects": false,
+    "bugs": "https://github.com/Yihao-G/mdi-es/issues",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Yihao-G/mdi-es.git"
+    },
+    "files": [
+        "dist/*"
+    ],
+    "exports": {
+        "./*": "./dist/*.js"
+    },
+    "scripts": {
+        "build": "npm run clean && npm run create && npm run ts-build",
+        "clean": "rimraf output dist",
+        "create": "node src/create.js",
+        "ts-build": "tsc output/index.ts --declaration --target es6 --module es6 --outDir dist/",
+        "bump-version": "node src/bumpVersion.js",
+        "prepublishOnly": "npm run build && npm run bump-version",
+        "postversion": "git push && git push --tags"
+    },
+    "keywords": [
+        "material-design",
+        "material",
+        "mdi",
+        "icons"
+    ],
+    "author": "Yihao Gao",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@mdi/svg": "5.9.55",
+        "@mdi/util": "0.3.2",
+        "rimraf": "3.0.2",
+        "typescript": "4.2.4"
+    }
+}
