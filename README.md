@@ -41,7 +41,7 @@ import { mdiAccount } from 'mdi-es'
 console.log(mdiAccount) // "M...Z"
 ```
 
-### Import individual module
+#### Import individual module
 
 This is useful if you are not using a JavaScript module bundler or using dynamic import, because not all icons are
 imported.
