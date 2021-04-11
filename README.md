@@ -1,5 +1,8 @@
 # Material Design Icons - ES Module Build
 
+[![Node.js Package](https://github.com/Yihao-G/mdi-es/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/Yihao-G/mdi-es/actions/workflows/npm-publish.yml)
+[![npm version](https://badge.fury.io/js/mdi-es.svg)](https://badge.fury.io/js/mdi-es)
+
 A custom ES modularised build of [Material Design Icons](https://materialdesignicons.com). This module contains all the
 SVG path data for all icons. Each icon is contained in an individual module.
 
