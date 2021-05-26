@@ -38,6 +38,6 @@
         "@mdi/svg": "5.9.55",
         "@mdi/util": "0.3.2",
         "rimraf": "3.0.2",
-        "typescript": "4.2.4"
+        "typescript": "4.3.2"
     }
 }
