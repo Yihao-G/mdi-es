@@ -1,6 +1,6 @@
 {
     "name": "mdi-es",
-    "version": "5.9.58",
+    "version": "5.9.59",
     "description": "Material Design Icons exported as ES modules",
     "main": "dist/index.js",
     "module": "dist/index.js",
